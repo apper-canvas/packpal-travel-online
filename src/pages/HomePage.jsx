@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { toast } from 'react-toastify'
-import MainFeature from '../components/MainFeature'
-import ApperIcon from '../components/ApperIcon'
 import { tripService } from '../services'
-
 function Home() {
   const [trips, setTrips] = useState([])
   const [loading, setLoading] = useState(false)
@@ -60,9 +57,9 @@ function Home() {
       <header className="bg-white/80 backdrop-blur-md border-b border-surface-200 sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center space-x-3">
+<div className="flex items-center space-x-3">
               <div className="h-10 w-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
-                <ApperIcon name="Luggage" className="h-6 w-6 text-white" />
+                <span className="text-white text-xl">🧳</span>
               </div>
               <h1 className="text-2xl font-heading font-bold text-surface-900">PackPal</h1>
             </div>
@@ -71,9 +68,9 @@ function Home() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setShowNewTrip(true)}
-              className="bg-primary text-white px-4 py-2 rounded-xl font-medium shadow-card hover:shadow-lg transition-all duration-200 flex items-center space-x-2"
+className="bg-primary text-white px-4 py-2 rounded-xl font-medium shadow-card hover:shadow-lg transition-all duration-200 flex items-center space-x-2"
             >
-              <ApperIcon name="Plus" className="h-5 w-5" />
+              <span className="text-lg">➕</span>
               <span className="hidden sm:inline">New Trip</span>
             </motion.button>
           </div>
@@ -112,10 +109,19 @@ function Home() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.3 }}
+transition={{ duration: 0.3 }}
               className="mb-12"
             >
-              <MainFeature onTripCreated={handleTripCreated} onCancel={() => setShowNewTrip(false)} />
+              <div className="bg-white rounded-2xl shadow-card p-8 text-center">
+                <h3 className="text-2xl font-bold mb-4">Create New Trip</h3>
+                <p className="text-surface-600 mb-6">Trip creation feature coming soon!</p>
+                <button 
+                  onClick={() => setShowNewTrip(false)}
+                  className="bg-surface-200 text-surface-700 px-6 py-2 rounded-xl hover:bg-surface-300 transition-colors"
+                >
+                  Close
+                </button>
+              </div>
             </motion.div>
           ) : (
             <motion.div
@@ -138,8 +144,8 @@ function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   className="text-center py-16"
                 >
-                  <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full flex items-center justify-center">
-                    <ApperIcon name="MapPin" className="h-16 w-16 text-primary" />
+<div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full flex items-center justify-center">
+                    <span className="text-6xl">📍</span>
                   </div>
                   <h3 className="text-2xl font-heading font-semibold text-surface-900 mb-2">
                     Ready for your first adventure?
@@ -178,9 +184,9 @@ function Home() {
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.9 }}
                           onClick={() => handleDeleteTrip(trip.id)}
-                          className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
                         >
-                          <ApperIcon name="Trash2" className="h-4 w-4 text-white" />
+                          <span className="text-white text-sm">🗑️</span>
                         </motion.button>
                       </div>
                       
@@ -189,15 +195,15 @@ function Home() {
                           <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
                             {trip.tripType}
                           </span>
-                          <div className="flex items-center space-x-1 text-surface-600">
-                            <ApperIcon name="Calendar" className="h-4 w-4" />
+<div className="flex items-center space-x-1 text-surface-600">
+                            <span className="text-sm">📅</span>
                             <span className="text-sm">{trip.duration} days</span>
                           </div>
                         </div>
                         
                         <div className="flex items-center justify-between">
-                          <div className="flex items-center space-x-2">
-                            <ApperIcon name="Thermometer" className="h-4 w-4 text-surface-500" />
+<div className="flex items-center space-x-2">
+                            <span className="text-sm">🌡️</span>
                             <span className="text-sm text-surface-600">
                               {trip.weather?.temperature || "N/A"}°
                             </span>
@@ -223,8 +229,8 @@ function Home() {
           className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           <div className="text-center space-y-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl flex items-center justify-center mx-auto">
-              <ApperIcon name="Brain" className="h-8 w-8 text-primary" />
+<div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl flex items-center justify-center mx-auto">
+              <span className="text-3xl">🧠</span>
             </div>
             <h3 className="text-xl font-heading font-semibold">Smart Suggestions</h3>
             <p className="text-surface-600">
@@ -233,8 +239,8 @@ function Home() {
           </div>
 
           <div className="text-center space-y-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-secondary/10 to-secondary/20 rounded-2xl flex items-center justify-center mx-auto">
-              <ApperIcon name="CheckSquare" className="h-8 w-8 text-secondary" />
+<div className="w-16 h-16 bg-gradient-to-br from-secondary/10 to-secondary/20 rounded-2xl flex items-center justify-center mx-auto">
+              <span className="text-3xl">✅</span>
             </div>
             <h3 className="text-xl font-heading font-semibold">Track Progress</h3>
             <p className="text-surface-600">
@@ -243,8 +249,8 @@ function Home() {
           </div>
 
           <div className="text-center space-y-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-accent/10 to-accent/20 rounded-2xl flex items-center justify-center mx-auto">
-              <ApperIcon name="Clock" className="h-8 w-8 text-accent" />
+<div className="w-16 h-16 bg-gradient-to-br from-accent/10 to-accent/20 rounded-2xl flex items-center justify-center mx-auto">
+              <span className="text-3xl">⏰</span>
             </div>
             <h3 className="text-xl font-heading font-semibold">Last-Minute Reminders</h3>
             <p className="text-surface-600">
