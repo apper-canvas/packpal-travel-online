@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "destination": "Tokyo, Japan",
+    "startDate": "2024-03-15",
+    "endDate": "2024-03-22",
+    "duration": 8,
+    "tripType": "leisure",
+    "weatherCondition": "mild",
+    "weather": {
+      "condition": "mild",
+      "temperature": "10-20°C"
+    },
+    "createdAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "id": "2",
+    "destination": "New York City, USA",
+    "startDate": "2024-04-10",
+    "endDate": "2024-04-15",
+    "duration": 6,
+    "tripType": "business",
+    "weatherCondition": "warm",
+    "weather": {
+      "condition": "warm",
+      "temperature": "20-30°C"
+    },
+    "createdAt": "2024-01-20T14:15:00Z"
+  },
+  {
+    "id": "3",
+    "destination": "Bali, Indonesia",
+    "startDate": "2024-05-01",
+    "endDate": "2024-05-10",
+    "duration": 10,
+    "tripType": "beach",
+    "weatherCondition": "hot",
+    "weather": {
+      "condition": "hot",
+      "temperature": "> 30°C"
+    },
+    "createdAt": "2024-02-01T09:45:00Z"
+  },
+  {
+    "id": "4",
+    "destination": "Swiss Alps, Switzerland",
+    "startDate": "2024-06-15",
+    "endDate": "2024-06-20",
+    "duration": 6,
+    "tripType": "adventure",
+    "weatherCondition": "cold",
+    "weather": {
+      "condition": "cold",
+      "temperature": "< 10°C"
+    },
+    "createdAt": "2024-02-10T16:20:00Z"
+  },
+  {
+    "id": "5",
+    "destination": "Paris, France",
+    "startDate": "2024-07-08",
+    "endDate": "2024-07-14",
+    "duration": 7,
+    "tripType": "leisure",
+    "weatherCondition": "warm",
+    "weather": {
+      "condition": "warm",
+      "temperature": "20-30°C"
+    },
+    "createdAt": "2024-02-15T11:30:00Z"
+  }
+]

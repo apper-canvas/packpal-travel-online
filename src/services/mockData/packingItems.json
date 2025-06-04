@@ -1,0 +1,252 @@
+[
+  {
+    "id": "1",
+    "packingListId": "1",
+    "name": "Underwear",
+    "category": "Clothing",
+    "quantity": 9,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "2",
+    "packingListId": "1", 
+    "name": "Socks",
+    "category": "Clothing",
+    "quantity": 9,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "3",
+    "packingListId": "1",
+    "name": "T-shirts",
+    "category": "Clothing", 
+    "quantity": 4,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "4",
+    "packingListId": "1",
+    "name": "Pants",
+    "category": "Clothing",
+    "quantity": 3,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "5",
+    "packingListId": "1",
+    "name": "Sleepwear",
+    "category": "Clothing",
+    "quantity": 2,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "6",
+    "packingListId": "1",
+    "name": "Toothbrush",
+    "category": "Toiletries",
+    "quantity": 1,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "7",
+    "packingListId": "1",
+    "name": "Toothpaste",
+    "category": "Toiletries",
+    "quantity": 1,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "8",
+    "packingListId": "1",
+    "name": "Shampoo",
+    "category": "Toiletries",
+    "quantity": 1,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "9",
+    "packingListId": "1",
+    "name": "Phone Charger",
+    "category": "Electronics",
+    "quantity": 1,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "10",
+    "packingListId": "1",
+    "name": "Power Bank",
+    "category": "Electronics",
+    "quantity": 1,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "11",
+    "packingListId": "1",
+    "name": "Passport",
+    "category": "Documents",
+    "quantity": 1,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "12",
+    "packingListId": "1",
+    "name": "Travel Insurance",
+    "category": "Documents",
+    "quantity": 1,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-01-15T10:36:00Z"
+  },
+  {
+    "id": "13",
+    "packingListId": "2",
+    "name": "Business Suit",
+    "category": "Clothing",
+    "quantity": 1,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-01-20T14:21:00Z"
+  },
+  {
+    "id": "14",
+    "packingListId": "2",
+    "name": "Formal Shirts",
+    "category": "Clothing",
+    "quantity": 3,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-01-20T14:21:00Z"
+  },
+  {
+    "id": "15",
+    "packingListId": "2",
+    "name": "Laptop",
+    "category": "Electronics",
+    "quantity": 1,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-01-20T14:21:00Z"
+  },
+  {
+    "id": "16",
+    "packingListId": "2",
+    "name": "Business Cards",
+    "category": "Documents",
+    "quantity": 1,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-01-20T14:21:00Z"
+  },
+  {
+    "id": "17",
+    "packingListId": "3",
+    "name": "Swimwear",
+    "category": "Clothing",
+    "quantity": 2,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-02-01T09:51:00Z"
+  },
+  {
+    "id": "18",
+    "packingListId": "3",
+    "name": "Flip-flops",
+    "category": "Clothing",
+    "quantity": 1,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-02-01T09:51:00Z"
+  },
+  {
+    "id": "19",
+    "packingListId": "3",
+    "name": "Sunscreen",
+    "category": "Toiletries",
+    "quantity": 1,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-02-01T09:51:00Z"
+  },
+  {
+    "id": "20",
+    "packingListId": "3",
+    "name": "Beach Towel",
+    "category": "Accessories",
+    "quantity": 1,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-02-01T09:51:00Z"
+  },
+  {
+    "id": "21",
+    "packingListId": "4",
+    "name": "Hiking Boots",
+    "category": "Clothing",
+    "quantity": 1,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-02-10T16:26:00Z"
+  },
+  {
+    "id": "22",
+    "packingListId": "4",
+    "name": "Rain Jacket",
+    "category": "Clothing",
+    "quantity": 1,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-02-10T16:26:00Z"
+  },
+  {
+    "id": "23",
+    "packingListId": "4",
+    "name": "First Aid Kit",
+    "category": "Safety",
+    "quantity": 1,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-02-10T16:26:00Z"
+  },
+  {
+    "id": "24",
+    "packingListId": "4",
+    "name": "Water Bottle",
+    "category": "Accessories",
+    "quantity": 1,
+    "isPacked": true,
+    "isCustom": false,
+    "createdAt": "2024-02-10T16:26:00Z"
+  },
+  {
+    "id": "25",
+    "packingListId": "4",
+    "name": "Winter Coat",
+    "category": "Clothing",
+    "quantity": 1,
+    "isPacked": false,
+    "isCustom": false,
+    "createdAt": "2024-02-10T16:26:00Z"
+  }
+]
